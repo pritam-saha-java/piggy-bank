@@ -3,7 +3,7 @@ package com.piggybank.piggybank.request;
 import lombok.Data;
 
 @Data
-public class RetrieveWealthRequestb {
+public class RetrieveWealthRequest {
 
     private String username;
 }
