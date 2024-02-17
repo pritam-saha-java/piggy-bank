@@ -10,8 +10,6 @@ import java.util.Map;
 
 @Data
 @Entity
-@AllArgsConstructor
-@NoArgsConstructor
 @Table(name = "wealth")
 public class WealthEntity {
 
@@ -21,24 +19,4 @@ public class WealthEntity {
 
     @ElementCollection
     private Map<String, BigDecimal> wealthMap;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Map<String, BigDecimal> getWealthMap() {
-        return wealthMap;
-    }
-
-    public void setWealthMap(Map<String, BigDecimal> wealthMap) {
-        this.wealthMap = wealthMap;
-    }
-
-    public WealthEntity(Long userId,
-                        Map<String, BigDecimal> wealthMap) {
-    }
 }

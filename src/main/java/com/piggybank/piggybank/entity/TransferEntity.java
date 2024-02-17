@@ -9,8 +9,6 @@ import java.math.BigDecimal;
 import java.util.Date;
 @Entity
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 @Table(name = "transfer")
 public class TransferEntity {
 

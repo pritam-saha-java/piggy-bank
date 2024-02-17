@@ -6,7 +6,6 @@ import java.math.BigDecimal;
 
 @Data
 public class CreateTransactionRequest {
-
     private String username;
     private boolean isBuying;
     private String currency;
