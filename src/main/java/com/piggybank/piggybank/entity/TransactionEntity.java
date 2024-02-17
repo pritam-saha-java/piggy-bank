@@ -1,17 +1,13 @@
 package com.piggybank.piggybank.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.util.Date;
 
-@Entity
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
+@Entity
 @Table(name = "transaction")
 public class TransactionEntity {
 
@@ -29,4 +25,9 @@ public class TransactionEntity {
 
     private Date transactionTime;
 
+    public TransactionEntity(Long userId,
+                             boolean isBuying,
+                             String currency, BigDecimal amount) {
+
+    }
 }
